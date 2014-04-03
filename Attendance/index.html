@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Attnedance</title>
+</head>
+<body>
+<center><font size=+3>sprk Your Attendance Of Today</font></center>
+<br><br>
+<center>
+<!-- sp->sp,tc->tc,mc->mc,os->os,adda->adda,mc-lab->mc-lab,os-lab->os-lab,adda-lab->adda-lab-->
+<a href="view.php" target="_btcnk">
+View Attendance</a>
+<a href="timetable.jpg" target="_btcnk">
+View Time-Table</a>
+<form method="post" action="input.php">
+<table>
+<tr><td>SP</td><td><input type="radio" name="sp" value="p">Present</td><td><input type="radio" name="sp" value="a">Absent</td><td><input type="radio" name="sp" value="n" checked="checked">No Class</td></tr>
+<tr><td>TC</td><td><input type="radio" name="tc" value="p">Present</td><td><input type="radio" name="tc" value="a">Absent</td><td><input type="radio" name="tc" value="n" checked="checked">No Class</td></tr>
+<tr><td>MC</td><td><input type="radio" name="mc" value="p">Present</td><td><input type="radio" name="mc" value="a">Absent</td><td><input type="radio" name="mc" value="n" checked="checked">No Class</td></tr>
+<tr><td>OS</td><td><input type="radio" name="os" value="p">Present</td><td><input type="radio" name="os" value="a">Absent</td><td><input type="radio" name="os" value="n" checked="checked">No Class</td></tr>
+<tr><td>ADDA</td><td><input type="radio" name="adda" value="p">Present</td><td><input type="radio" name="adda" value="a">Absent</td><td><input type="radio" name="adda" value="n" checked="checked">No Class</td></tr>
+
+<tr><td>SP-LAB</td><td><input type="radio" name="spl" value="p">Present</td><td><input type="radio" name="spl" value="a">Absent</td><td><input type="radio" name="spl" value="n" checked="checked">No Class</td></tr>
+<tr><td>OS-LAB</td><td><input type="radio" name="osl" value="p">Present</td><td><input type="radio" name="osl" value="a">Absent</td><td><input type="radio" name="osl" value="n" checked="checked">No Class</td></tr>
+<tr><td>MC-LAB</td><td><input type="radio" name="mcl" value="p">Present</td><td><input type="radio" name="mcl" value="a">Absent</td><td><input type="radio" name="mcl" value="n" checked="checked">No Class</td></tr>
+</table>
+<br><br><br><br>
+Last Marked Day: <select name="day">
+<option value="Monday">Monday</option>
+<option value="Tuesday">Tuesday</option>
+<option value="Wednesday">Wednesday</option>
+<option value="Thursday">Thursday</option>
+<option value="Friday">Friday</option>
+</select>
+<br><br><br><br>
+<input type="submit" value="Go">
+</center>
+</form>
+</body>
+</html>
